@@ -1,12 +1,46 @@
-.navbar-lewagon {
+.navbar-sample {
+  display:flex;
   justify-content: space-between;
-  background: white;
+  background: #F0F2EF;
+  height: 100px;
 }
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-brand {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  top: 10px;
+  margin: 0;
+  font-family: 'Arizonia', cursive;
+  font-size: 50px;
+  border-radius: 50%;
+  border: solid 3px #912F40;
+  background-color: #912F40;
+  color: #F0F2EF;
+  width: 80px;
+  height: 80px;
+  text-align: center;
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-brand:hover {
+  background-color: #F0F2EF;
+  color: #912F40;
+}
+@media (min-width: 992px){
+  .navbar-expand-lg {
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+  }
+}
+.navbar-sample .navbar-collapse {
+  flex-grow: 0 !important;
+}
+.mr-auto {
+  margin-right: auto;
+  align-items: center;
+}
+.nav-link {
+  color: #40434E;
+}
+.nav-link:hover {
+  font-weight: bold;
+  color: #912F40;
 }

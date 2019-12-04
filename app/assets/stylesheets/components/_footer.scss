@@ -1,0 +1,26 @@
+footer {
+  height: 80px;
+  margin-top: 80px;
+  padding:30px 40px;
+  background-color: #40434E;
+  color: #E6E6E9;
+}
+.wrap-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-links a {
+  color: #E6E6E9;
+}
+.middle-links p{
+  margin: 0px;
+}
+.right-links ul {
+  display: flex;
+  margin: 0px;
+}
+.right-links li {
+  padding: 0px 15px;
+  list-style: none;
+}
