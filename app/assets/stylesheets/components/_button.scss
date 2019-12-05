@@ -1,0 +1,38 @@
+.btn {
+  padding: 10px 24px;
+  margin-right: 25px;
+}
+
+.btn-rounded {
+  border: solid 1px #000000;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 1px 2px #777;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 0px 1px 2px #777;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 0px 1px 2px #777;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.btn-rounded:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow:    none;
+  box-shadow:         none;
+}
+
+.btn-sample {
+  border: solid 3px #912F40;
+  font-style: bold;
+  border-radius: 3px;
+  color: #912F40;
+}
+
+.btn-sample:hover {
+  background-color: #912F40;
+  color: white;
+  font-size: 18px;
+}
+
+.btn-icon {
+  border: solid 1px #40434E;
+  background-color: #AFD5AA;
+  color: #40434E;
+  font-weight: bold;
+}

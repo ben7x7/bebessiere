@@ -1,0 +1,219 @@
+<div class="container-master">
+  <div class="main-title">
+    <h1>COLLECTIONS</h1>
+  </div>
+  <div class="wrapper">
+    <div id="sidebar">
+      <div class="sidebar-title text-center my-5">
+        <h4>MENU</h4>
+      </div>
+      <nav class="nav-sidebar">
+        <ul>
+          <li><%= link_to 'Avatar', '#avatar', class: 'nav-link' %></li>
+          <li><%= link_to 'Banner', '#banner', class: 'nav-link' %></li>
+          <li><%= link_to 'Button', '#button', class: 'nav-link' %></li>
+          <li><%= link_to 'Form', '#form', class: 'nav-link' %></li>
+          <li><%= link_to 'Table', '#table', class: 'nav-link' %></li>
+          <li><%= link_to 'Tabs', '#tabs', class: 'nav-link' %></li>
+          <li><%= link_to 'Colors', '#colors', class: 'nav-link' %></li>
+          <li><%= link_to 'Cards', '#cards', class: 'nav-link' %></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap-collections">
+      <div class="collection" id="avatar">
+        <div class="collection-title mb-5">
+          <h2>Avatar</h2>
+        </div>
+        <div class="section-avatar">
+          <%= image_tag 'avatar.png', class: 'avatar', alt: 'avatar' %>
+          <%= image_tag 'avatar.png', class: 'avatar-large', alt: 'avatar-large' %>
+          <%= image_tag 'beep-beep.png', class: 'avatar-bordered', alt: 'avatar-bordered' %>
+          <%= image_tag 'beep-beep.png', class: 'avatar-square', alt: 'avatar-square' %>
+        </div>
+      </div>
+
+      <div class="collection" id="banner">
+        <div class="collection-title mb-5">
+          <h2>Banner</h2>
+        </div>
+        <div class="section-banner">
+          <div class="banner">
+            <div class="container">
+              <h1>Welcome to the coding jungle with Le Wagon !</h1>
+              <br>
+              <%= image_tag 'logo.png', style:"height: 60px" %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collection" id="button">
+        <div class="collection-title mb-5">
+          <h2>Button</h2>
+        </div>
+        <div class="section-button">
+          <%= link_to "Read more", '#', class: 'btn btn-rounded' %>
+          <%= link_to "Cancel", '#', class: 'btn btn-sample' %>
+          <%= link_to '#', class: 'btn btn-icon' do %>
+            <i class="far fa-edit"></i> Edit
+          <% end %>
+        </div>
+      </div>
+
+      <div class="collection" id="colors">
+        <div class="collection-title mb-5">
+          <h2>Colors</h2>
+        </div>
+        <div class="section-colors">
+          <div class="btn-group1" role="group" aria-label="Basic example">
+            <button type="button" class="bttn btn-one">#AFD5AA</button>
+            <button type="button" class="bttn btn-two">#40434E</button>
+            <button type="button" class="bttn btn-three">#F0F2EF</button>
+            <button type="button" class="bttn btn-four">#912F40</button>
+            <button type="button" class="bttn btn-five">#EFE7DA</button>
+          </div>
+
+          <div class="btn-group2" role="group" aria-label="Basic example">
+            <button type="button" class="bttn btn-six">#B4B8AB</button>
+            <button type="button" class="bttn btn-seven">#153243</button>
+            <button type="button" class="bttn btn-eight">#284B63</button>
+            <button type="button" class="bttn btn-nine">#F4F9E9</button>
+            <button type="button" class="bttn btn-ten">#EEF0EB</button>
+          </div>
+
+          <div class="btn-group3" role="group" aria-label="Basic example">
+            <button type="button" class="bttn btn-eleven">#C84630</button>
+            <button type="button" class="bttn btn-twelve">#FFFFFF</button>
+            <button type="button" class="bttn btn-thirteen">#E6E8E6</button>
+            <button type="button" class="bttn btn-fourteen">#CED0CE</button>
+            <button type="button" class="bttn btn-fifteen">#191919</button>
+          </div>
+          <%= link_to 'More', 'https://coolors.co/', class: 'btn btn-rounded' %>
+        </div>
+      </div>
+
+      <div class="collection" id="table">
+        <div class="collection-title mb-5">
+          <h2>Table</h2>
+        </div>
+        <div class="section-table">
+          <table class="fl-table">
+            <thead>
+              <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>Header 5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+              </tr>
+            <tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="collection" id="tabs">
+        <div class="collection-title mb-5">
+          <h2>Tabs</h2>
+        </div>
+        <div class="section-tabs">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus blanditiis nulla nisi commodi magni, culpa, sapiente velit ea laudantium id modi necessitatibus at aliquam ipsam.
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <br>
+              Itaque omnis alias. Repellat, beatae sed. Ipsam enim, libero velit earum dicta laborum, sapiente. Neque sapiente labore eos illo. Quo, cumque aliquid obcaecati ut, hic ducimus.
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <br>
+              Harum quaerat dolores nemo, fugiat est praesentium excepturi, magnam quibusdam perspiciatis earum, totam. In veniam, quo. Libero velit earum dicta laborum, sapiente. Neque sapiente labore eos illo.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collection" id="pills">
+        <div class="collection-title mb-5">
+          <h2>Pills</h2>
+        </div>
+        <div class="section-pills">
+          <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In eos natus, est laborum quae neque accusantium debitis ullam, atque rem ratione odio, nisi, quis inventore omnis.
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              Ut laudantium iusto consectetur corporis facere nesciunt eos, doloremque et obcaecati, velit libero esse vitae dignissimos cumque quisquam aperiam molestias ipsum suscipit natus cum? Itaque quasi cumque ducimus eos, consequatur minima odio quo aperiam illum dignissimos.
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              Nisi nam nihil iure, unde temporibus. Quidem praesentium, assumenda dolores eaque ullam officiis repudiandae odit, maiores error! Non, neque magnam quidem velit maxime assumenda rerum enim quam libero consequuntur quis officia atque hic numquam autem eos dicta labore.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collection" id="cards">
+        <div class="collection-title mb-5">
+          <h2>Cards</h2>
+        </div>
+        <div class="section-cards">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

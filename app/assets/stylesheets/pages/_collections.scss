@@ -1,0 +1,117 @@
+.container-master {
+  display: flex;
+  flex-direction: column;
+}
+.main-title {
+  font-size: 50px;
+  background-color: #912F40;
+  height: 180px;
+  color: #F0F2EF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+}
+
+#sidebar {
+  flex: 0 0 250px;
+  background-color: #40434E;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-title {
+  color: #F0F2EF;
+}
+.nav-sidebar ul {
+  list-style: none;
+}
+
+.nav-sidebar li > a {
+  color: #F0F2EF;
+}
+
+.wrap-collections {
+  flex-grow: 1;
+}
+
+.collection {
+  padding: 50px 50px
+}
+
+#avatar,
+#button,
+#table,
+#pills {
+  background-color: #EFE7DA;
+  background-size: cover;
+}
+
+.btn-one {
+  background-color: #AFD5AA;
+}
+.btn-two {
+  background-color: #40434E;
+  color: #FFFFFF;
+}
+.btn-three {
+  background-color: #F0F2EF;
+}
+.btn-four {
+  background-color: #912F40;
+  color: #FFFFFF;
+}
+.btn-five {
+  background-color: #EFE7DA;
+}
+.btn-six {
+  background-color: #B4B8AB;
+}
+.btn-seven {
+  background-color: #153243;
+  color: #FFFFFF;
+}
+.btn-eight {
+  background-color: #284B63;
+  color: #FFFFFF;
+}
+.btn-nine {
+  background-color: #F4F9E9;
+}
+.btn-ten {
+  background-color: #EEF0EB;
+}
+.btn-eleven {
+  background-color: #C84630;
+}
+.btn-twelve {
+  background-color: #FFFFFF;
+}
+.btn-thirteen {
+  background-color: #E6E8E6;
+}
+.btn-fourteen {
+  background-color: #CED0CE;
+}
+.btn-fifteen {
+  background-color: #191919;
+  color: #FFFFFF;
+}
+.bttn {
+  width: 120px;
+  padding: 10px 15px;
+}
+.btn-group1,
+.btn-group2,
+.btn-group3 {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+

@@ -6,4 +6,7 @@ class PagesController < ApplicationController
   def flip
   end
 
+  def collections
+  end
+
 end
