@@ -12,11 +12,12 @@
           <li><%= link_to 'Avatar', '#avatar', class: 'nav-link' %></li>
           <li><%= link_to 'Banner', '#banner', class: 'nav-link' %></li>
           <li><%= link_to 'Button', '#button', class: 'nav-link' %></li>
+          <li><%= link_to 'Cards', '#cards', class: 'nav-link' %></li>
+          <li><%= link_to 'Colors', '#colors', class: 'nav-link' %></li>
           <li><%= link_to 'Form', '#form', class: 'nav-link' %></li>
           <li><%= link_to 'Table', '#table', class: 'nav-link' %></li>
           <li><%= link_to 'Tabs', '#tabs', class: 'nav-link' %></li>
-          <li><%= link_to 'Colors', '#colors', class: 'nav-link' %></li>
-          <li><%= link_to 'Cards', '#cards', class: 'nav-link' %></li>
+          <li><%= link_to 'Pills', '#pillss', class: 'nav-link' %></li>
         </ul>
       </nav>
     </div>
@@ -210,10 +211,110 @@
           <h2>Cards</h2>
         </div>
         <div class="section-cards">
-
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+            Breakfast
+          </div>
+          <br>
+          <div class="cards">
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+              Breakfast
+            </div>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+              Lunch
+            </div>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+              Dinner
+            </div>
+          </div>
+          <br>
+          <div class="trips">
+            <div class="card-trip">
+              <img src="/assets/beep-home.jpg" />
+              <div class="card-trip-infos">
+                <div>
+                  <h2>Title here</h2>
+                  <p>Short description here!</p>
+                </div>
+                <h2 class="card-trip-pricing">54.00€</h2>
+                <img src="/assets/beep-beep.png" style="height:60px" class="card-trip-user avatar-bordered" />
+              </div>
+            </div>
+            <div class="card-trip">
+              <img src="/assets/dog-house.jpg" />
+              <div class="card-trip-infos">
+                <div>
+                  <h2>Droopy</h2>
+                  <p>I'm happy !</p>
+                </div>
+                <h2 class="card-trip-pricing">$49.99</h2>
+                <img src="/assets/avatar.png" style="height:60px" class="card-trip-user avatar-bordered" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
+      <div class="collection" id="form">
+        <div class="collection-title mb-5">
+          <h2>Form</h2>
+        </div>
+        <div class="section-form">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-danger">Sign in</button>
+          </form>
+          <hr>
+          <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+            <div class="search-form-control form-group">
+              <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+              <button name="button" type="submit" class="btn btn-success">
+                <i class="fas fa-search"></i> Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </div>

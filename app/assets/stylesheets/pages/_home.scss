@@ -1,1 +1,117 @@
-// Specific CSS for your home-page
+.home {
+  background-color: #333;
+  background-size: cover;
+  height: 90vh;
+}
+.welcome {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  padding: 100px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.circle-item {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  width: 80px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.circle-box-front,
+.circle-box-back {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  min-height: 80px;
+  -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.circle-box-front {
+  background-color: #912F40;
+  vertical-align: center;
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.circle-box:hover .circle-box-front {
+  -ms-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.circle-box-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.circle-box:hover .circle-box-back {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.circle-box .inside {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+
+
+  transform: translateY(-50%) translateZ(60px) scale(.94);
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+  -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+  top: 50%;
+}
+.inside{
+  font-family: 'Arizonia', cursive;
+  font-size: 50px;
+  height: 80px;
+}
+
+.circle-box-back img {
+  height: 50px;
+  margin-top: 15px;
+}
