@@ -1,19 +1,35 @@
 .home {
   background-color: #333;
   background-size: cover;
-  height: 90vh;
+
 }
 .welcome {
   color: #fff;
   font-size: 32px;
   text-align: center;
   padding: 100px;
+
 }
 .box {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #fff;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  animation-name: logo;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+}
 
+@keyframes logo {
+  0% {width: 10px; height: 10px; background-color: #fff; border-radius: 50% 50% 50% 50%;}
+  20% {width: 80px; height: 80px; background-color: #E6E6E9; border-radius: 0% 50% 50% 50%;}
+  40% {width: 160px; height: 160px; background-color: #66666E; border-radius: 50% 0% 50% 50%;}
+  60% {width: 240px; height: 240px; background-color: #6B8F71; border-radius: 50% 50% 0% 50%;}
+  80% {width: 320px; height: 320px; background-color: #AFD5AA; border-radius: 50% 50% 50% 0%;}
+  100% {width: 400px; height: 400px; background-color: #912F40; border-radius: 50% 50% 50% 50%;}
 }
 
 
@@ -30,7 +46,8 @@ html {
   -webkit-backface-visibility: hidden;
   width: 80px;
   max-width: 100%;
-  margin: auto;
+  margin: 100px auto;
+  padding-bottom: 100px;
 }
 
 .circle-box-front,
