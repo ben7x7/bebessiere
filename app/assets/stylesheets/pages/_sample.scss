@@ -1,0 +1,30 @@
+.main-container {
+  background-image: image-url('404-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+
+}
+
+.text-error {
+
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 250px;
+
+}
+
+.text-error h1 {
+  font-size: 80px;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 900;
+  color: #F9D141;
+}
+
+.link a {
+  color: #F9D141;
+  font-size: 18px;
+}
