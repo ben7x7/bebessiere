@@ -8,7 +8,10 @@ Rails.application.routes.draw do
   get 'sample404', to: 'pages#sample404', as: :sample404
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  resources :desserts, only: [:index, :show, :create, :new, :edit, :update]
+  resources :desserts, only: [:index, :show, :create, :new, :edit, :update] do
+    resources :mesures, only: [:create, :new]
+  end
+  resources :mesures, only: [:destroy]
 end
 
 
