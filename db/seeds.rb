@@ -5,8 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "open-uri"
+require "json"
 
 Dessert.destroy_all
+Ingredient.destroy_all
 
 desserts = [
   {
@@ -28,3 +31,11 @@ desserts = [
 ]
 
 desserts.each { |dessert| Dessert.create(dessert)}
+
+file = "https://raw.githubusercontent.com/ben7x7/seed-database/master/seed-bebessiere/ingredients.json"
+
+sample = JSON.parse(open(file).read)
+sample["ingredients"].each do |ingredient|
+  Ingredient.create! ingredient
+end
+

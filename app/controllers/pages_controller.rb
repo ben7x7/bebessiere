@@ -9,4 +9,6 @@ class PagesController < ApplicationController
   def collections
   end
 
+  def sample404
+  end
 end
