@@ -1,3 +1,7 @@
-<%= @desserts.each do |dessert| %>
-  <%= dessert.name %>
-<% end %>
+<div class="desserts-index">
+  <ul class="desserts-list">
+    <%= @desserts.each do |dessert| %>
+      <li><%= dessert.name %></li>
+    <% end %>
+  </ul>
+</div>
