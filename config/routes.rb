@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'animations', to: 'pages#animations', as: :animations
   get 'images', to: 'pages#images', as: :images
   get 'sample404', to: 'pages#sample404', as: :sample404
+  get 'page404', to: 'pages#page404', as: :page404
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   resources :desserts, only: [:index, :show, :create, :new, :edit, :update] do

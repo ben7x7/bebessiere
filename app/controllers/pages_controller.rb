@@ -11,4 +11,7 @@ class PagesController < ApplicationController
 
   def sample404
   end
+
+  def page404
+  end
 end
