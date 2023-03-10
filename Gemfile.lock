@@ -60,7 +60,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
-    autoprefixer-rails (10.4.7.0)
+    autoprefixer-rails (10.4.13.0)
       execjs (~> 2)
     bindex (0.8.1)
     bootsnap (1.16.0)
@@ -86,7 +86,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.2.0)
+    concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
     erubi (1.12.0)
@@ -117,8 +117,8 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    minitest (5.17.0)
-    msgpack (1.6.0)
+    minitest (5.18.0)
+    msgpack (1.6.1)
     net-imap (0.3.4)
       date
       net-protocol
@@ -133,9 +133,9 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
-    pg (1.4.5)
+    pg (1.4.6)
     public_suffix (5.0.1)
-    puma (6.1.0)
+    puma (6.1.1)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.6.3)
